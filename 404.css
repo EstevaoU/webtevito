@@ -1,0 +1,48 @@
+
+        body {
+            background-color: rgb(8, 9, 14);
+            font-family:ms gothic;
+            font-size: 15px;
+        }
+        @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px blue;
+}
+
+div {
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+     -ms-animation: fadein 5s;
+      -o-animation: fadein 5s;
+         animation: fadein 5s;
+}
+
+.text{
+    margin-top: 50px;
+    text-align: center;
+}
+
+p, a {
+    color: aliceblue;
+}
+
+a:hover {
+    background-color: aliceblue;
+    color: rgb(8, 9, 14);
+    cursor:help;
+}
+
+h3 {
+    font-weight: bold;
+    color: blue;
+}

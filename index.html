@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<!-- TEVIWEB V2.1.0.0.3
+=======
+<!-- TEVIWEB V2.1.0.0.2
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04
+hello... beware the code is as tidy as i could write, which is messy.
+look and take all you like but be advised that copying and pasting gives you no learning
+                 ___
+  ___======____=---=)
+/T            \_--===)
+[ \ (0)   \~    \_-==)
+ \      / )J~~    \-=)
+  \\___/  )JJ~~~   \)
+   \_____/JJJ~~~~    \
+   / \  , \J~~~~~     \
+  (-\)\=|\\\~~~~       L__
+  (\\)  (\\\)_           \==__
+   \V    \\\) ===_____   \\\\\\
+          \V)     \_) \\\JJ\J\)
+                      /J\JT\JJJJ)
+                      (JJJ| \UUU)
+                       (UU)
+
+hand-coded by tevito/estêvão on visual studio code -->
+<html>
+<<<<<<< HEAD
+
+<head>
+    <title>webtevito</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The web site of Tevo">
+    <link rel="shortcut icon" href="/" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/player.css">
+</head>
+
+<body onload="javascript:playpauseTrack()">
+    <div class="site">
+
+
+        <main>
+            <!-- SITE HEADER -->
+            <header>
+                <img src="/banner1.gif">
+            </header>
+
+            <div id="fdd">
+            </div>
+            <!-- END OF SITE HEADER -->
+            <!-- ACTUAL SITE -->
+            <div id="content">
+                <!-- NAVBAR -->
+
+                <div class="box side" style="grid-column: 1 / 2;">
+                    <section id="atlas">
+                        <details open>
+                            <summary>navigate</summary>
+                            <a href="/">
+                                home
+                            </a>
+                            <a>
+                                webmaster
+                            </a>
+                            <a>
+                                blog
+                            </a>
+                            <a>
+                                bookshelf
+                            </a>
+                            <a>
+                                commonbook
+                            </a>
+                            <a>
+                                museum
+                            </a>
+                            <a>
+                                galleria
+                            </a>
+                            <a>
+                                sitemap
+                            </a>
+                        </details>
+                    </section>
+                    <section id="btn">
+                        <span>wanna link back? take a button!</span><br>
+                        <a href="https://tevito.neocities.org">
+                            <img src="https://file.garden/Zx6xDK2qeAn-d7p4/TEVITO-BUTTON.gif" style="margin: 3px;"
+                                alt="TeviWeb"></a>
+                        <a href="https://tevito.neocities.org">
+                            <img src="https://file.garden/Zx6xDK2qeAn-d7p4/tevito-btn-v1.gif" style="margin: 3px;"
+                                alt="TeviWeb"></a>
+                        <textarea readonly style="max-width:120px"><a href="https://tevito.neocities.org"><img src="https://file.garden/Zx6xDK2qeAn-d7p4/TEVITO-BUTTON.gif" alt="TeviWeb"></a>
+                        </textarea>
+                    </section>
+                </div>
+
+                <!-- END OF NAVBAR -->
+                <!-- MAIN -->
+                <div class="box mid" style="grid-column: 2 / 3;">
+                    <section id="wlcm">
+                        <div id="welcome">Welcome, traveler...</div>
+                        <div style="grid-column: 1 / 2; grid-row: 1 / 3"><img src="rei.gif"></div>
+                        <div style="grid-column: 2;border-top: var(--main) 1px dotted;">
+                            <p>
+
+                                Hilda Hilst opens one of her most polemic works with a famous, wholesome Oscar
+                                Wilde quote: <br><i>We are all in the gutter, but some of us are looking
+                                    at the stars.</i> <br> More than that, she adds to it: <br> <i>And those who look
+                                    get
+                                    fucked.</i><br>
+                                In the gutter-world of A.I., corporativism, paid subscriptions, omnipresent ads, i give a try at having something of my
+                                own in the wasteland of computers
+
+                            </p><br>
+                            <p class="counter">you are websailor number<br>
+                                <!-- FC2 Counter  Starts here -->
+                                <script language="javascript" type="text/javascript"
+                                    src="//counter1.fc2.com/counter.php?id=38845239&main=1"></script><noscript><img
+                                        src="//counter1.fc2.com/counter_img.php?id=38845239&main=1" /></noscript>
+                            </p>
+                            <!-- FC2 Counter  Ends here -->
+                            <p class="counter" style="font-size: 11px;color:rgb(190, 189, 186);">(disable adblocker to
+                                see!)</small>
+                            <div style="grid-column: 2;" id="blinkies"><br>
+                                <img src="graphics/bjork.webp"><img src="graphics/bauhaus.webp">
+                                <img src="graphics/hole.webp"><img src="graphics/aphex.webp">
+
+                                <img src="graphics/twinpeaks.webp"><img src="graphics/visions.webp">
+                                <img src="graphics/sparks.webp"><img src="graphics/joy div.webp">
+                            </div>
+                            <!-- Divider -->
+                        </div>
+                        <div
+                            style="grid-column: 1 / 4;background-image: url(wire.gif);height: 20px;margin: 0 !important;">
+                        </div>
+                        <!-- Divider ends here -->
+                        <!-- Status Cafe -->
+                        <div style="margin-top:10px;height: fit-content;grid-column: 1 / 2;">
+                            <img src="graphics/badapple.webp">
+                        </div>
+                        <div role="tooltip" style="height: fit-content;grid-column: 1 / 2;top: -15px;">
+
+                            <div id="statuscafe">
+                                <div id="statuscafe-username"></div>
+                                <div id="statuscafe-content"></div>
+                            </div>
+                            <script src="https://status.cafe/current-status.js?name=tevito" defer></script>
+
+                        </div>
+                        <!-- Status Cafe ends here -->
+                        <section style="grid-row: 4 / 6;grid-column: 2 / 3;">
+                            <!--  UPDATE LOG -->
+                            <div class="diario">
+                                <p> The Uptade Log! </p>
+                                <b>15.12.2025</b> Updated intro text + added an everchanging quote at the header + created a guestbook!
+                                <br><br>
+                                <b>11.12.2025</b> It's almost christmans and it's the only time this year i've got to
+                                get back here. Updated a bit of the homepage and started to rework my ever-unfinished
+                                webmaster page.
+                                <br><br>
+                                <b>07.06.2024</b> Ok, i decided to finally touch this again. Did some minor things:
+                                fixed a weird error related to the layout getting stuck when viewing in narrow
+                                windows/mobile, changed the background, added a shadowy effect to it and changed the
+                                middle block border to a paper texture (i think i spent some good 3 hours on this one).
+                                Also, i'm pretty sure the current version of the site is from way after november 2024???
+                                Or is it not? Time is too weird.
+                                <br><br>
+                                <b>30.11.2024</b> New button made and v2 is in the making...
+                                <br><br>
+                                <b>04.03.2023</b> The website now has a button!
+                                <br><br>
+                                <b>20.01.2023</b> Added the projects page to the navbar
+                                <br><br>
+                                <b>19.01.2023</b> Added the Update Log! +minor bug-ish fixes and now the cat gets
+                                transparent when
+                                hovering so you can reveal all it's secrets *o*
+                                <br><br>Added a view count widget
+                                <br><br>
+                                <b>18.01.2023</b> Changed the URL to 'tevito' and <u>added the navbar!</u>
+                                altough most links are not made yet it has a nice windows 7 aero
+                                look which is also draggable with the miracle of <a
+                                    href="https://khang-nd.github.io/7.css/">7.css</a>
+                                and js scripts from jquery. also i changed the song iframe
+                                from Tem Certeza? to Chocolate (both from Ana Frango Elétrico)
+                                and added Tumblr, E-Mail and a little silly copyright thing to the footer (this is
+                                obviously
+                                not actually copyrighted tho). also changed the background which previously
+                                was <a
+                                    href="https://cdn.discordapp.com/attachments/759063801881559131/1062478241639694366/IMG_0469_edited.jpg">
+                                    a picture i took of a cell site right in front of my house</a> and now is those two
+                                happy
+                                doggos i have saved from tumblr! :·3 i'm very glad with how it's turning
+                                <br><br>
+                                <b>10.01.2023</b> Changed the name to "igotblistersonmyfingers" and started to work on
+                                the index page
+                                <br><br>
+                                <b>around november 2022</b> Changed the name to Tinderbox
+                                <br><br>
+                                <b>around september 2022</b> Replaced the default Neocities
+                                html page to a gif of a working pikachu written "in construction!"
+                                <br><br>
+                                <b>28.08.2022</b> I created a Neocities account!
+                            </div>
+                            <!-- END OF UPDATE LOG -->
+                        </section>
+
+                        <a href="https://tevito.atabook.org/" class="guest">
+
+                            <img src="/graphics/andanteweb.gif" style="margin: 14px;"><br>
+                            Sign the guestbook!
+
+                        </a>
+                </div>
+                </section>
+                <!-- MARQUEE Starts Here -->
+                <div class="marquee-wrapper" style="grid-row: 2 / 3;grid-column: 2 / 3;height: 37px;">
+                    <div class="container">
+                        <div class="marquee-block">
+                            <div class="marquee-inner to-left">
+                                <span>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/machinegrl.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/phonechump.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/nerv.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/robots.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/sakuya.jpg">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/windowsplayer.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/brasil.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/handcoded.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/lainpower.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/mslive.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/queercode.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/tbh.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/twilight_button.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/by_cyber-rot_on_neocities (4).gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/z7qokWl.gif">
+                                    </div>
+                                </span>
+                                <span>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/machinegrl.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/phonechump.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/nerv.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/robots.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/sakuya.jpg">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/windowsplayer.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/brasil.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/handcoded.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/lainpower.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/mslive.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/queercode.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/tbh.gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/twilight_button.png">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/by_cyber-rot_on_neocities (4).gif">
+                                    </div>
+                                    <div class="marquee-item">
+                                        <img src="/graphics/z7qokWl.gif">
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Marquee ends here -->
+
+                <!-- END OF MAIN -->
+                <!-- Side bar (forgot what it's called) starts here -->
+                <div class="box side" style="grid-column: 3 / 4;">
+                    <section>
+                        <!-- this player was taken from adilene.net,
+=======
+        <head>
+            <title>webtevito</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="The web site of Tevo">
+            <link
+            rel="shortcut icon"
+            href="/"
+            type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/player.css">   
+        </head>
+
+        <body  onload="javascript:playpauseTrack()">
+
+            <div class="site">
+
+            
+            <main>
+            <!-- SITE HEADER -->
+                <header>
+                    <img src="/banner1.gif">
+                </header>
+            <!-- END OF SITE HEADER -->
+            <!-- ACTUAL SITE -->
+                <div id="content">
+            <!-- NAVBAR -->
+
+            <div class="box side" style="grid-column: 1 / 2;">
+                <section id="atlas">
+                    <details open>
+                <summary>navigate</summary>
+                <a href="/">
+                    home
+                </a>
+                <a>
+                    webmaster
+                </a>
+                <a>
+                    blog
+                </a>
+                <a>
+                    bookshelf
+                </a>
+                <a>
+                    commonbook
+                </a>
+                <a>
+                    museum
+                </a>
+                <a>
+                    galleria
+                </a>
+                <a>
+                    sitemap
+                </a>
+                    </details>
+                </section>
+                <section id="btn">
+                    <span>wanna link back? take a button!</span><br>
+                        <a href="https://tevito.neocities.org">
+                        <img src="https://file.garden/Zx6xDK2qeAn-d7p4/TEVITO-BUTTON.gif" style="margin: 3px;" alt="TeviWeb"></a>
+                        <a href="https://tevito.neocities.org">
+                        <img src="https://file.garden/Zx6xDK2qeAn-d7p4/tevito-btn-v1.gif" style="margin: 3px;" alt="TeviWeb"></a>
+                        <textarea readonly style="max-width:120px"><a href="https://tevito.neocities.org"><img src="https://file.garden/Zx6xDK2qeAn-d7p4/TEVITO-BUTTON.gif" alt="TeviWeb"></a>
+                        </textarea>
+                    </section>
+            </div>
+            
+            <!-- END OF NAVBAR -->
+            <!-- MAIN -->
+            <div class="box mid" style="grid-column: 2 / 3;" >
+                <section id="wlcm">
+                <div id="welcome">Welcome, traveler...</div>
+                <div style="grid-column: 1 / 2; grid-row: 1 / 3"><img src="rei.gif"></div>
+                <div style="grid-column: 2;border-top: var(--main) 1px dotted;"><p>
+
+                    Hilda Hilst opens one of her most polemic works with a famous, wholesome Oscar
+                    Wilde quote: <br><i>We are all in the gutter, but some of us are looking
+                    at the stars.</i> <br> More than that, she adds to it: <br> <i>And those who look get
+                    fucked in the ass.</i><br>
+                    In the gutter-world of A.I., corporativism, neoliberalism, post-end of history, where
+                    it's all whirlwind, heat and flash, this is me giving a try at having something of my own
+
+                </p><br>
+                <p class="counter">you are websailor number<br>
+                    <!-- FC2 Counter  Starts here -->
+                    <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=38845239&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38845239&main=1" /></noscript></p>
+                    <!-- FC2 Counter  Ends here -->
+                    <p class="counter" style="font-size: 11px;color:rgb(190, 189, 186);">(disable adblocker to see!)</small>
+                <div style="grid-column: 2;" id="blinkies"><br>
+                    <img src="graphics/bjork.webp"><img src="graphics/bauhaus.webp">
+                    <img src="graphics/hole.webp"><img src="graphics/aphex.webp">
+                    
+                    <img src="graphics/twinpeaks.webp"><img src="graphics/visions.webp">
+                     <img src="graphics/sparks.webp"><img src="graphics/joy div.webp">
+                </div>
+                    <!-- Divider -->
+                </div>
+                <div style="grid-column: 1 / 4;background-image: url(wire.gif);height: 20px;margin: 0 !important;">
+                </div>
+                    <!-- Divider ends here -->
+                    <!-- Status Cafe -->
+                <div style="margin-top:10px;height: fit-content;grid-column: 1 / 2;">
+                <img src="graphics/badapple.webp">
+                </div>
+                <div role="tooltip" style="height: fit-content;grid-column: 1 / 2;top: -15px;">
+
+                    <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=tevito" defer></script>
+
+                </div>
+                    <!-- Status Cafe ends here -->
+                    <section style="grid-row: 4 / 6;grid-column: 2 / 3;">
+                        <!--  UPDATE LOG -->
+        <div class="diario">
+            <p> The Uptade Log! </p>
+            <b>11.12.2025</b> It's almost christmans and it's the only time this year i've got to
+            get back here. Updated a bit of the homepage and started to rework my ever-unfinished
+            webmaster page.
+            <br><br>
+            <b>07.06.2024</b> Ok, i decided to finally touch this again. Did some minor things: fixed a weird error related to the layout getting stuck when viewing in narrow windows/mobile, changed the background, added a shadowy effect to it and changed the middle block border to a paper texture (i think i spent some good 3 hours on this one).
+            Also, i'm pretty sure the current version of the site is from way after november 2024??? Or is it not? Time is too weird.
+            <br><br>
+            <b>30.11.2024</b> New button made and v2 is in the making...
+            <br><br>
+            <b>04.03.2023</b> The website now has a button!
+            <br><br>
+            <b>20.01.2023</b> Added the projects page to the navbar
+            <br><br>
+            <b>19.01.2023</b> Added the Update Log! +minor bug-ish fixes and now the cat gets transparent when
+            hovering so you can reveal all it's secrets *o*
+            <br><br>Added a view count widget
+            <br><br>
+            <b>18.01.2023</b> Changed the URL to 'tevito' and <u>added the navbar!</u>
+            altough most links are not made yet it has a nice windows 7 aero
+            look which is also draggable with the miracle of <a href="https://khang-nd.github.io/7.css/">7.css</a>
+            and js scripts from jquery. also i changed the song iframe
+            from Tem Certeza? to Chocolate (both from Ana Frango Elétrico)
+            and added Tumblr, E-Mail and a little silly copyright thing to the footer (this is obviously
+            not actually copyrighted tho). also changed the background which previously
+            was <a href="https://cdn.discordapp.com/attachments/759063801881559131/1062478241639694366/IMG_0469_edited.jpg">
+            a picture i took of a cell site right in front of my house</a> and now is those two happy
+            doggos i have saved from tumblr! :·3 i'm very glad with how it's turning 
+            <br><br>
+            <b>10.01.2023</b> Changed the name to "igotblistersonmyfingers" and started to work on the index page
+            <br><br>
+            <b>around november 2022</b> Changed the name to Tinderbox
+            <br><br>
+            <b>around september 2022</b> Replaced the default Neocities
+            html page to a gif of a working pikachu written "in construction!"
+            <br><br>
+            <b>28.08.2022</b> I created a Neocities account!
+        </div>
+    <!-- END OF UPDATE LOG -->
+        </section>
+            </div>
+        </section>
+                             <!-- MARQUEE Starts Here -->
+                             <div class="marquee-wrapper" style="grid-row: 2 / 3;grid-column: 2 / 3;height: 37px;">
+                                <div class="container">
+                                    <div class="marquee-block">
+                                        <div class="marquee-inner to-left">
+                                            <span>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/machinegrl.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/phonechump.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/nerv.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/robots.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/sakuya.jpg">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/windowsplayer.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/brasil.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/handcoded.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/lainpower.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/mslive.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/graphics/queercode.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/graphics/tbh.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/twilight_button.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/graphics/by_cyber-rot_on_neocities (4).gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/z7qokWl.gif">
+                                                </div>
+                                            </span>
+                                            <span>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/machinegrl.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/phonechump.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/nerv.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/robots.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/sakuya.jpg">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/windowsplayer.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/brasil.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/handcoded.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/lainpower.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/mslive.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/graphics/queercode.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/graphics/tbh.gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/twilight_button.png">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/graphics/by_cyber-rot_on_neocities (4).gif">
+                                                </div>
+                                                <div class="marquee-item">
+                                                    <img src="/btns/z7qokWl.gif">
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Marquee ends here -->
+
+            <!-- END OF MAIN -->
+             <!-- Side bar (forgot what it's called) starts here -->
+            <div class="box side" style="grid-column: 3 / 4;">
+                <section>
+                    <!-- this player was taken from adilene.net,
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04
+                    and was adapted from sayantanm19's original code:
+                    https://github.com/sayantanm19/js-music-player
+                    forever thanks them for that! way easier to mess than webamp 
+                    -->
+<<<<<<< HEAD
+
+                        <div id="musicplayer">
+                            <div class="now-playing"></div>
+
+                            <div class="track-info">
+                                <div class="track-name"></div>
+                                <div class="track-artist"></div>
+                            </div>
+
+                            <div class="controls">
+                                <div class="seeking">
+                                    <div class="current-time">00:00</div>
+
+                                    <input type="range" min="1" max="100" value="0" class="seek_slider"
+                                        onchange="seekTo()">
+
+                                    <div class="total-duration">0:00</div>
+                                </div>
+
+                                <div class="buttons">
+                                    <div class="prev-track" onclick="prevTrack()">&#171;</div>
+
+                                    <div class="playpause-track" onclick="playpauseTrack()">&#9654;</div>
+
+                                    <div class="next-track" onclick="nextTrack()">&#187;</div>
+                                </div>
+
+                                <div class="volume">
+                                    <div class="volume-icon">&#128362;</div>
+                                    <input type="range" min="1" max="100" value="25" class="volume_slider"
+                                        onchange="setVolume()">
+                                    <!-- the default volume value is 25, change this if you want it to be higher or lower (i wouldn't recommend it bc it gets really loud) -->
+                                </div>
+                            </div>
+
+                            <audio id="music" src=""></audio>
+                        </div>
+
+                    </section>
+                    <section class="crt">
+
+                        <span id="crt"> Currently... </span><br>
+
+                        <span class="crt-item">Feeling:</span>
+
+                        <a class="crt-cont" href="https://www.imood.com/users/tevito/" target="_blank"><img
+                                src="https://moods.imood.com/display/uname-tevito/bg-d0d0d0/imood.gif"
+                                alt="The current mood of tevito at www.imood.com" border="0"
+                                style="margin-bottom: -4px;"></a><br>
+
+                        <span class="crt-item">Reading:</span>
+
+                        <span class="crt-cont">Wuthering Heights by Emile Brontë</span><br>
+
+                        <span class="crt-item">Watching:</span>
+
+                        <span class="crt-cont">Netflix's Dark (S1)</span>
+
+                    </section>
+                    <!--  To do -->
+                    <div class="diario">
+                        <p> To-do list... </p>
+                        - Improve the overall design and color scheme
+                        <br><br>
+                        - Add more graphics (i specifically want to throw some fake ads here)
+                        <br><br>
+                        - Link other websites, enter webrings and showcase fanlistings
+                        <br><br>
+                        - Make an about-me page.. *shrudders*
+                        <br><br>
+                        - Turn this music player skeuomorphic (excited for this one, it will be a challenge)
+
+                    </div>
+                    <!-- END OF To do -->
+                    <a href="//clap.fc2.com/post/tevito/?url=https%3A%2F%2Ftevito.neocities.org%2F&amp;title=tevito"
+                        target="_blank" title="Web Clap by FC2" style="margin-left: 40px;"><img
+                            src="//clap.fc2.com/images/button/white/tevito?url=https%3A%2F%2Ftevito.neocities.org%2F&amp;lang=en"
+                            alt="Web Clap by FC2" style="border:none;"></a>
+
+                </div>
+                <footer class="box"> <a href="https://neocities.org/site/tevito" target="_blank">NC Profile</a> —
+                    <a href="https://letterboxd.com/estevoplz/" target="_blank">Letterboxd</a>
+                    — <a href="https://www.last.fm/user/EstevaoU" target="_blank">Last.FM</a>
+                    — <a href="https://estevoplz.tumblr.com/" target="_blank">Tumblr</a>
+                    — <a href="mailto:webtevo@gmail.com" target="_blank">E-Mail me!</a>
+                    <p style="font-size: 11px; margin-bottom: 0;">Eletric Tevito Heart © 2023 - Dia do Apocalipse</p>
+                </footer>
+            </div>
+        </main>
+
+
+    </div style="z-index:2;">
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="/scripts/player.js"></script>
+    <script src="fdd.js"></script>
+
+
+</body>
+=======
+                    
+                    <div id="musicplayer">
+                        <div class="now-playing"></div>
+                        
+                        <div class="track-info">
+                            <div class="track-name"></div>
+                            <div class="track-artist"></div>
+                        </div>
+            
+                        <div class="controls">
+                            <div class="seeking">
+                                <div class="current-time">00:00</div>
+            
+                                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            
+                                <div class="total-duration">0:00</div>
+                            </div>
+            
+                            <div class="buttons">
+                                <div class="prev-track" onclick="prevTrack()">&#171;</div>
+            
+                                <div class="playpause-track" onclick="playpauseTrack()">&#9654;</div>
+            
+                                <div class="next-track" onclick="nextTrack()">&#187;</div>
+                            </div>
+            
+                            <div class="volume">
+                                <div class="volume-icon">&#128362;</div>
+                                <input type="range" min="1" max="100" value="25" class="volume_slider" onchange="setVolume()"> <!-- the default volume value is 25, change this if you want it to be higher or lower (i wouldn't recommend it bc it gets really loud) -->
+                            </div>
+                        </div>
+            
+                        <audio id="music" src=""></audio>
+                    </div>
+                    
+                </section>
+                <section class="crt">
+
+                               <span id="crt"> Currently... </span><br>
+
+                                    <span class="crt-item">Feeling:</span>
+
+                                    <a class="crt-cont" href="https://www.imood.com/users/tevito/" target="_blank"><img src="https://moods.imood.com/display/uname-tevito/bg-d0d0d0/imood.gif" alt="The current mood of tevito at www.imood.com" border="0" style="margin-bottom: -4px;"></a><br>
+
+                                    <span class="crt-item">Reading:</span>
+
+                                    <span class="crt-cont">Wuthering Heights by Emile Brontë</span><br>
+
+                                    <span class="crt-item">Watching:</span>
+
+                                        <span class="crt-cont">Netflix's Dark (S1)</span>
+
+                </section>
+                                        <!--  To do -->
+        <div class="diario">
+            <p> To-do list... </p>
+            - Improve the overall design and color scheme
+            <br><br>
+            - Add more graphics (i specifically want to throw some fake ads here)
+            <br><br>
+            - Link other websites, enter webrings and showcase fanlistings
+            <br><br>
+            - Make an about-me page.. *shrudders*
+            <br><br>
+            - Turn this music player skeuomorphic (excited for this one, it will be a challenge)
+
+        </div>
+    <!-- END OF To do -->
+    <a href="//clap.fc2.com/post/tevito/?url=https%3A%2F%2Ftevito.neocities.org%2F&amp;title=tevito" target="_blank" title="Web Clap by FC2" style="margin-left: 40px;"><img src="//clap.fc2.com/images/button/white/tevito?url=https%3A%2F%2Ftevito.neocities.org%2F&amp;lang=en" alt="Web Clap by FC2" style="border:none;"></a>
+
+            </div>
+            <footer class="box"> <a href="https://neocities.org/site/tevito" target="_blank">NC Profile</a> —
+                <a href="https://letterboxd.com/estevoplz/" target="_blank">Letterboxd</a>
+                — <a href="https://www.last.fm/user/EstevaoU" target="_blank">Last.FM</a>
+                — <a href="https://estevoplz.tumblr.com/" target="_blank">Tumblr</a> 
+                — <a href="mailto:webtevo@gmail.com" target="_blank">E-Mail me!</a> 
+            <p style="font-size: 11px; margin-bottom: 0;">Eletric Tevito Heart © 2023 - Dia do Apocalipse</p></footer>
+        </div>
+    </main>
+
+        
+                </div style="z-index:2;">
+                </div>
+            </div>
+                </div>
+            </div>
+            <script src="/scripts/player.js"></script>
+            
+            
+        </body>
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04
+<!--
+credits before i forget or before i make a page just for them:
+nav border is by http://across.xxxxxxxx.jp/index.htm
+barbed wire divisor is from https://neo-himeism.net
+<<<<<<< HEAD
+-->
+
+</html>
+=======
+--></html>
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04

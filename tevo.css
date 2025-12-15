@@ -1,0 +1,248 @@
+.center {
+  margin: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#nav {
+  margin: 10px auto;
+  width: 136px;
+  a {
+    padding-left: 10px;
+    font-size: 10px;
+  }
+}
+
+.summary {
+  display: flex;
+  flex: 1 1 0%;
+  font-weight: 700;
+  align-items: center;
+  height: 23px;
+  width: 125px;
+  padding-left: 11px;
+  background: linear-gradient(
+    to right,
+    rgb(239, 242, 248) 1%,
+    rgb(240, 240, 255) 29%,
+    rgb(168, 188, 255) 80%
+  );
+}
+
+.sumcon {
+  padding: 0 5px 5px;
+  background: rgba(198, 211, 255, 0.87)
+    linear-gradient(
+      to right,
+      rgb(180, 200, 251) 0%,
+      rgb(164, 185, 251) 50%,
+      rgb(180, 200, 251) 100%
+    );
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::before,
+summary::-webkit-details-marker {
+  display: none;
+  content: "";
+}
+
+.tcenter {
+  width: 136px;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding: 3px;
+  border: 1px solid #eef2fb;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-collapse: collapse;
+}
+
+.boxside {
+  /*float: left;*/
+  width: 165px;
+  height: 525px;
+  background-image: url("/assets/images/webmaster/cork.jpg");
+}
+
+.noscroll :-webkit-scrollbar {
+  display: none;
+}
+
+.noscroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#dog {
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  font: 16pt bold Segoe UI, sans-serif;
+  padding-bottom: 14px;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+.about {
+  display: flex;
+  background-color: white;
+  width: 900px;
+  height: 525px;
+}
+
+.boxmid {
+  width: 570px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+iframe {
+  overflow: hidden;
+  border: none;
+}
+
+td {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding: 3px;
+  border: 1px solid #eef2fb;
+  border-collapse: collapse;
+  background: #eef2fb;
+}
+
+th {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dce8f2+0,bfe8f9+50,9fd8ef+51,2ab0ed+100 */
+  background: #dce8f2; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #dce8f2 0%,
+    #bfe8f9 50%,
+    #9fd8ef 51%,
+    #2ab0ed 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #dce8f2 0%,
+    #bfe8f9 50%,
+    #9fd8ef 51%,
+    #2ab0ed 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #dce8f2 0%,
+    #bfe8f9 50%,
+    #9fd8ef 51%,
+    #2ab0ed 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dce8f2', endColorstr='#2ab0ed',GradientType=0 ); /* IE6-9 */
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2px;
+  border: 1px solid #eef2fb;
+  border-collapse: collapse;
+  /* border-radius: 10px 10px 0px 0px; */
+}
+
+td:first-child {
+  background: #c6d3f7; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #c6d3f7 0%,
+    #ffffff 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #c6d3f7 0%,
+    #ffffff 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c6d3f7 0%,
+    #ffffff 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6d3f7', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+  border: 1px solid #eef2fb;
+  border-collapse: collapse;
+}
+
+td:nth-child(even) {
+  text-align: center;
+}
+
+#janela {
+  max-width: 300px;
+  position: absolute;
+  bottom: -2.3vh;
+  left: -1vw;
+}
+
+#fanlistings {
+  position: absolute;
+  bottom: -2.3vh;
+  right: -1vw;
+}
+
+.marquee-wrapper .container {
+  overflow: hidden;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.marquee-wrapper .marquee-block {
+  --total-marquee-items: 15;
+  width: calc(98px * (var(--total-marquee-items)));
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  padding: 30px 0;
+  top: -23px;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.marquee-inner {
+  display: block;
+  width: 200%;
+  position: absolute;
+}
+
+.marquee-inner.to-left {
+  animation: marqueeLeft 29s linear infinite;
+}
+.marquee-inner.to-right {
+  animation: marqueeRight 25s linear infinite;
+}
+.marquee-item {
+  width: 88px;
+  height: auto;
+  display: inline-block;
+  margin: 0 5px;
+  float: left;
+  transition: all 0.2s ease-out;
+}
+@keyframes marqueeLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.marquee-inner.to-left:hover {
+  animation-play-state: paused;
+}

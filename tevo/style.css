@@ -1,0 +1,215 @@
+<<<<<<< HEAD
+body {
+    font-family: "Pixel MS SS", Verdana, Tahoma, sans-serif;
+    background-image: url(/assets/images/taco.jpg);
+    background-size: 500px;
+}
+
+@font-face {
+    font-family: "Pixel MS SS";
+    src: url("/assets/fonts/ms_sans_serif.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+=======
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04
+.centre {
+    display: grid;
+    grid-template-columns: 290px 600px;
+
+    margin: auto;
+    margin: 0;
+    position: absolute;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+<<<<<<< HEAD
+}
+
+.left {
+    background-color: #292d2b;
+    background-image: url("/45.png"), linear-gradient(to right,
+            #49444c 10%,
+            #292d2b 43%,
+            #111010 100%);
+
+=======
+
+.left {
+    background-color: #292d2b;
+    background-image: linear-gradient(to right, #49444c 10%,#292d2b 43%, #111010 100%);
+    
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04
+    border-radius: 5px 0 0 5px;
+
+    border: 1px solid rgba(109, 107, 107, 0.3);
+    border-right: none;
+    border-top: 1px solid #888b86;
+<<<<<<< HEAD
+    box-shadow: inset 0 0 1px #6c686f;
+}
+
+iframe {
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.cont {
+    border-width: 0;
+    border-left: 1px solid;
+    border-image: linear-gradient(#888b86, #0e0e0e) 10;
+=======
+}
+
+iframe {
+        border: none;
+        border-radius: 0 5px 5px 0;
+    }
+
+.cont {
+        border-width: 0;
+        border-left: 1px solid;
+        border-image: linear-gradient(#888b86, #0e0e0e) 10;
+
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04
+}
+
+table {
+    width: 250px;
+}
+
+td {
+    height: 40px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+<<<<<<< HEAD
+    border-image: linear-gradient(to right,
+            #828791 4%,
+            #777a84 25%,
+            #2b2b2b 64%,
+            #1c1c1c 81%,
+            #131313 100%) 20;
+}
+
+button {
+    height: 43px;
+    display: inline-flex;
+    align-items: center;
+    width: 290px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-image: linear-gradient(to right,
+            #828791 4%,
+            #777a84 25%,
+            #2b2b2b 64%,
+            #1c1c1c 81%,
+            #131313 100%) 20;
+    text-align: left;
+
+    span {
+        margin: 0 0 0 10px;
+    }
+}
+
+button.active {
+    box-shadow: inset 0 0 20px #9b8c8c5e !important;
+    background-image: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%) !important;
+}
+
+
+button.active:hover {
+    cursor: default;
+    pointer-events: none;
+
+}
+
+button:hover {
+    cursor: pointer;
+        box-shadow: inset 0 0 20px #0000005e;
+    background-image: linear-gradient(to bottom,
+    #4c4c4c 0%,
+    #727272 1%,
+    #23201d 5%,
+    #111 53%,
+    #1c1c1c 92%,
+    #333 100%);
+}
+
+button::before {
+    content: url(/testy.png);
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+.navbar * {
+    font-family: "Pixel MS SS", Verdana, Tahoma, sans-serif;
+    font-size: 11px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0 1px 0;
+    padding: 0;
+}
+
+.header {
+    width: 290px;
+    height: 77px;
+    cursor: pointer;
+
+    background-image: url("sprite.jpg");
+    background-repeat: no-repeat;
+}
+
+@keyframes spr {
+    from {
+        background-position-x: 0;
+        /* Start at the first frame */
+    }
+
+    to {
+        /* Moves the background across the entire width of the sheet. Use a negative value to shift it left */
+        background-position-x: -4752px;
+    }
+}
+
+@keyframes spr-reverse {
+    from {
+        background-position-x: -4752px;
+    }
+
+    to {
+        background-position-x: 0;
+    }
+}
+
+.header:hover {
+    opacity: 1;
+    /* Animation properties */
+    animation-name: spr;
+    animation-duration: 0.6s;
+    /* Duration for one full cycle */
+    animation-timing-function: steps(16);
+    animation-fill-mode: forwards;
+}
+
+.header:not(:hover) {
+    animation-name: spr-reverse;
+    animation-duration: 0.6s;
+    /* Duration for one full cycle */
+    animation-timing-function: steps(16);
+    animation-fill-mode: forwards;
+}
+=======
+    border-image: linear-gradient(to right, #828791 4%,#777a84 25%,#2b2b2b 64%,#1c1c1c 81%,#131313 100%) 20;
+}
+
+button {
+    display: block;
+    width: 290px;
+    padding: 12px;
+    text-align: left;
+}
+
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04

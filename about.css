@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url(ms_sans_serif.woff) format("woff");
+  src: url(ms_sans_serif.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url(ms_sans_serif_bold.woff) format("woff");
+  src: url(ms_sans_serif_bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal
+}
+@font-face {
+  font-family: Perfect DOS VGA\ 437 Win;
+  src: url(PerfectDOSVGA437Win.woff2) format("woff2"), url(PerfectDOSVGA437Win.woff) format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+body {
+  display: flex;
+  background-image: url(/assets/images/bubbles.bmp);
+  justify-content: center;
+  align-items: center;
+}
+
+.tela {
+  margin: auto;
+  background-color: black;
+  background-image: url(/assets/images/xp/wallpaper.png);
+  background-size: 800px 570px;
+  width: 800px;
+  height: 600px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+
+.taskbar {
+  bottom: -3px;
+  right: 0;
+  position: absolute;
+}
+
+.toolbar {
+  font-family: "Pixelated MS Sans Serif";
+}
+
+#sobre {
+  position: absolute;
+  top: 90px;
+  left: 130px;
+  z-index: 10;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+}
+}

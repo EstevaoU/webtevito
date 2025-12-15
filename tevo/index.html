@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- TEVIWEB/tevo V2.0
+hello... beware the code is as tidy as i could write, which is messy.
+look and take all you like but be advised that copying and pasting gives you no learning
+                 ___
+  ___======____=---=)
+/T            \_--===)
+[ \ (0)   \~    \_-==)
+ \      / )J~~    \-=)
+  \\___/  )JJ~~~   \)
+   \_____/JJJ~~~~    \
+   / \  , \J~~~~~     \
+  (-\)\=|\\\~~~~       L__
+  (\\)  (\\\)_           \==__
+   \V    \\\) ===_____   \\\\\\
+          \V)     \_) \\\JJ\J\)
+                      /J\JT\JJJJ)
+                      (JJJ| \UUU)
+                       (UU)
+
+hand-coded by tevito/estêvão on visual studio code -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tevo</title>
+    <link href="style.css" rel="stylesheet">
+    <link href=" " rel="icon">
+<<<<<<< HEAD
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll('.button');
+  const iframe = document.getElementById('midbox');
+
+  function activate(btn) {
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    iframe.src = btn.dataset.src;
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => activate(btn));
+  });
+
+  // activate default
+  activate(document.getElementById('defaultTab'));
+});
+</script>
+
+=======
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04
+</head>
+
+<body>
+    <div class="centre">
+        <div class="left">
+<<<<<<< HEAD
+            <div class="header"></div>
+
+            <div class="navbar">
+
+                    <button class="button" id="defaultTab" data-src="/tevo_if.html">
+                        Butão
+                    </button>
+
+
+                    <button class="button" data-src="/tevo_if.html">
+                        Butão
+                    </button>
+
+
+                    <button class="button" data-src="/tevo_if.html">
+                        Butão
+                    </button>
+
+=======
+            <img src="/assets/images/webmaster/header.gif">
+
+            <div class="navbar">
+                <a>
+                    <button>
+                        botao
+                    </button>
+                </a>
+                <a>
+                    <button>
+                        botao
+                    </button>
+                </a>
+                <a>
+                    <button>
+                        botao
+                    </button>
+                </a>
+>>>>>>> b1950db020df33f7ae98a6b6d0a60e43fe9deb04
+            </div>
+
+        </div>
+        <div class="cont">
+            <iframe name="midif"
+            id="midbox"
+            title="tevito"
+            width="100%"
+            height="100%"
+            src="/tevo_if.html">
+
+            </iframe>
+        </div>
+    </div>
+</body>
+
+</html>

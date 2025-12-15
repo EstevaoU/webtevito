@@ -1,0 +1,104 @@
+html {
+  --play: black;
+}
+#musicplayer{
+  background:var(--back); /* background color of player */
+  border: double 3px var(--main);
+ /* border around player */
+  /* width:200px; /* width of the player - make it 100% if you want it to fill your container */
+
+  text-align:center; 
+  display:flex;
+  flex-direction:column;
+}
+
+.track-name {
+  font-size: 16px;
+}
+
+.songtitle, .track-info, .now-playing{
+  padding:9px;
+}
+
+.controls{
+  display:flex; 
+  flex-direction:column; 
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  font-size:17px !important; /* size of controls */
+  width:100%;
+
+}
+
+.buttons div{
+  width: max-content;
+  margin: 0 15px;
+}
+
+.playpause-track, .prev-track, .next-track{
+  font-family: Helvetica, Arial, sans-serif;
+  color:var(--play); /* color of buttons */
+  font-size:20px; /* size of buttons */
+  cursor: pointer;
+}
+
+.volume-icon{
+  font-size:22px !important; /* size of volume icon */
+}
+
+.seeking, .volume{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:5px;
+  margin: 9px;
+}
+
+.now-playing, .track-info{
+  background-color:var(--back); /* background color of top two boxes */
+}
+
+.now-playing{
+  font-weight:bold;
+}
+
+input[type=range]{
+  -webkit-appearance:none; /* removes default appearance of the tracks */
+  width:100%;
+}
+
+input[type=range]:focus{
+  outline:none; /* removes outline around tracks when focusing */
+}
+
+input[type=range]::-webkit-slider-runnable-track{
+  width:100%;
+  height:4px; /* thickness of seeking track */
+  background:var(--play); /* color of seeking track */
+}
+
+input[type=range]::-webkit-slider-thumb{
+  height:10px; /* height of seeking square */
+  width:10px; /* width of seeking square */
+  border-radius:0px; /* change to 5px if you want a circle seeker */
+  background:var(--play); /* color of seeker square */
+  -webkit-appearance:none;
+  margin-top:-3px; /* fixes the weird margin around the seeker square in chrome */
+}
+
+input[type=range]::-moz-range-track{
+  width:100%;
+  height:4px; /* thickness of seeking track */
+  background:var(--play); /* color of seeking track */
+}
+
+input[type=range]::-moz-range-thumb{
+  height:10px; /* height of seeking square */
+  width:10px; /* width of seeking square */
+  border-radius:0px; /* change to 5px if you want a circle seeker */
+  background:var(--play); /* color of seeker square */
+  border:none; /* removes weird border around seeker square in firefox */
+}

@@ -1,0 +1,51 @@
+
+p {
+  padding: 5px;
+  text-align: justify;
+  /* max-width: 530px; */
+}
+
+.boxmid {
+  overflow-y: scroll;
+  /* height: 525px; */
+  scrollbar-width: none;
+  min-height: 600px;
+  padding: 16px;
+  padding: 1em;
+  margin-top: -1px;
+  background-color: #fff;
+  color: #252525;
+  background-image: url("/assets/images/webmaster/paper.jpg");
+  background-size: cover;
+  background-attachment: local;
+  box-shadow: inset 12px 0 13px -2px rgba(0, 0, 0,0.3);
+}
+
+.infobox {
+  float: right;
+  background-color: #f9f9f9;
+  color: black;
+  margin: 0.5em 0 0.5em 1em;
+  padding: 0.2em;
+  float: right;
+  clear: right;
+  text-align: left;
+  font-size: 88%;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-family: "Linux Libertine", Georgia, Times, serif;
+  text-shadow: rgb(252, 246, 246) 0 1px 0;
+  line-height: 1.3;
+  color: black;
+  font-weight: normal;
+  border-bottom: 1px solid #aaa;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 0.875em;
+  color: #252525;
+}
