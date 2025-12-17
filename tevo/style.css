@@ -89,27 +89,38 @@ button {
 }
 
 button.active {
-    box-shadow: inset 0 0 20px #9b8c8c5e !important;
-    background-image: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%) !important;
+    box-shadow: none !important;
+  background-image: url("/assets/half.png") !important;
+    background-size: auto 43px !important;
+
+            text-shadow:          
+                -1px 0px 0 #000,
+                1px 0px 0 #000,
+                0px -1px 0 #000,
+                0px 1px 0 #000,
+                -1px 0px 1px #000,
+                1px 0px 1px #000,
+                0px -1px 1px #000,
+                0px 1px 1px #000;
 }
 
 
 button.active:hover {
     cursor: default;
     pointer-events: none;
-
 }
+
 
 button:hover {
     cursor: pointer;
         box-shadow: inset 0 0 20px #0000005e;
-    background-image: linear-gradient(to bottom,
+  /*  background-image: linear-gradient(to bottom,
     #4c4c4c 0%,
     #727272 1%,
     #23201d 5%,
     #111 53%,
     #1c1c1c 92%,
-    #333 100%);
+    #333 100%); */
 }
 
 button::before {
@@ -122,7 +133,7 @@ button::before {
     font-family: "Pixel MS SS", Verdana, Tahoma, sans-serif;
     font-size: 11px;
     color: white;
-    text-shadow: rgb(0, 0, 0) 0 1px 0;
+    text-shadow: 0px 1px 0 #000;
     padding: 0;
 }
 
