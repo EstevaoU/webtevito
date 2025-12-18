@@ -1,16 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title></title>
   <link href="int.css" rel="stylesheet" />
+  <link href="/assets/images/webmaster/wal_ope.png" rel="preload" as="image">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Interests</h1>
-        <p>bla bla bla bla</p>
+  <div class="container">
+    <h1>Interests</h1>
+    <p>Click slowly and see ▼</p>
+    <div id="wallet">
+      <img src="/assets/images/webmaster/wal_clo.png" data-alt="/assets/images/webmaster/wal_ope.png">
+
+      <div class="overlay">
+        <div class="top">
+          <p>
+            <a href="#" data-target="1">Likes + dislikes</a>
+            <a href="#" data-target="2">Miscellaneous</a>
+            <a href="#" data-target="3">Film</a>
+            <a href="#" data-target="4">Academic</a>
+          </p>
+        </div>
+
+        <div class="bot"></div>
+      </div>
     </div>
 
+
+      <div class="panel" id="1">
+    <h2>Likes + dislikes</h2>
+    <p style="font-family: 'Noto Sans JP';font-size: 20px;">&#9825;</p>
+  </div>
+
+  <div class="panel" id="2">
+    <p>This is PROJECTS content</p>
+  </div>
+
+  <div class="panel" id="3">
+    <p>This is CONTACT content</p>
+  </div>
+
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const wallet = document.getElementById("wallet");
+  const img = wallet.querySelector("img");
+  const top = wallet.querySelector(".top");
+  const bottom = wallet.querySelector(".bot");
+
+  const links = top.querySelectorAll("a");
+  const panels = document.querySelectorAll(".panel");
+
+  function toggleWallet() {
+    const current = img.getAttribute("src");
+    const alt = img.dataset.alt;
+
+    img.setAttribute("src", alt);
+    img.dataset.alt = current;
+
+    wallet.classList.toggle("active");
+  }
+
+  // image opens wallet
+  img.addEventListener("click", () => {
+    if (!wallet.classList.contains("active")) {
+      toggleWallet();
+    }
+  });
+
+  // bottom toggles
+  bottom.addEventListener("click", toggleWallet);
+
+  // prevent top from toggling wallet
+  top.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+  // 🔹 content switching
+  links.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const id = link.dataset.target;
+
+      panels.forEach(p => p.classList.remove("active"));
+
+      const target = document.getElementById(id);
+      if (target) target.classList.add("active");
+    });
+  });
+});
+</script>
+
+
 </body>
+
 </html>

@@ -4,9 +4,11 @@
 }
 
 body {
-    background-color: #cca878;
+    background-color: #d8af80;
     background-image: url("/assets/images/webmaster/rice.png");
     text-shadow: rgb(248, 220, 204) 0 1px 0, rgba(0, 0, 0, 0.3) 0 -1px 0;
+      font-size: 13px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -19,16 +21,74 @@ h1 {
 p {
   padding: 5px;
   text-align: justify;
-  font-size: 13px;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 
 .container {
     margin: 30px 10px 10px 10px;
     padding: 20px;
     padding-top: 10px;
-    border-style: dashed;
-    border-radius: 4px;
-    border-width: 1px;
-    border-color: rgba(70, 36, 4, 0.418);
+}
+
+#wallet {
+  display: grid;
+  place-items: center;
+  position: relative;
+  img, a {
+    display: block;
+  }
+  a {
+    color: #69c66f;
+    text-decoration: none;
+  }
+
+}
+
+
+.overlay {
+    
+  pointer-events: none;
+  color: #280c03;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  text-shadow: rgba(204, 160, 135, 0.65) 0 1px 0, rgba(0, 0, 0, 0.21) 0 -1px 0;
+}
+
+#wallet.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.top {
+  flex: 1;
+  pointer-events: auto;
+  padding-left: 90px;
+  padding-top: 15px;
+}
+
+.bot {
+  pointer-events: auto;
+  cursor: pointer;
+  height: 217px;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+  border: 1px dashed #280c03 ;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 15px;
+  h2 {
+    font-family: 'ribbon', 'Brush Script MT', cursive;
+    font-size: 29px;
+    margin: 0;
+  };
 }
