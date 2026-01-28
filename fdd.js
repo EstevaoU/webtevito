@@ -48,6 +48,10 @@ const quotes = [
       href="https://la.wikisource.org/wiki/Carmina_(Horatius)/Liber_III/Carmen_XXX" target="_blank">
        Non omnis moriar
    </a>`,
+   `<a title="Patti Smith, 'Land'"
+      href="https://www.youtube.com/watch?v=cSk6jfln84A" target="_blank">
+       How much fits between the eyes of a horse?
+   </a>`,
 ];
 
 

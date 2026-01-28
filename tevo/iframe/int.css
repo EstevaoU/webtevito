@@ -20,7 +20,6 @@ h1 {
 
 p {
   padding: 5px;
-  text-align: justify;
   margin: 0;
 }
 
@@ -38,7 +37,7 @@ p {
     display: block;
   }
   a {
-    color: #69c66f;
+    color: #d5b32e;
     text-decoration: none;
   }
 
@@ -46,7 +45,7 @@ p {
 
 
 .overlay {
-    
+  text-shadow: rgba(253, 240, 232, 0.27) 0 1px 0, rgba(0, 0, 0, 0.36) 0 -1px 0;
   pointer-events: none;
   color: #280c03;
   position: absolute;
@@ -68,6 +67,10 @@ p {
   pointer-events: auto;
   padding-left: 90px;
   padding-top: 15px;
+  p {
+    padding-left: 15px;
+    padding-top: 20px;
+  }
 }
 
 .bot {
@@ -91,4 +94,14 @@ p {
     font-size: 29px;
     margin: 0;
   };
+}
+
+table {
+  width: 491px;
+  td {
+  vertical-align: top;
+    }
+  span {
+    font-family: 'Noto Sans JP'
+  }
 }
