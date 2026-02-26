@@ -52,6 +52,10 @@ const quotes = [
       href="https://www.youtube.com/watch?v=cSk6jfln84A" target="_blank">
        How much fits between the eyes of a horse?
    </a>`,
+      `<a title="James Joyce, 'Ulysses'"
+      href="https://en.wikipedia.org/wiki/Ulysses_(novel)" target="_blank">
+        Look at the sea. What does it care about offences?
+   </a>`,
 ];
 
 
