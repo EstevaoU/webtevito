@@ -1,149 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="int.css" rel="stylesheet" />
+    <link
+      href="/assets/images/webmaster/wal_ope.png"
+      rel="preload"
+      as="image"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <link href="int.css" rel="stylesheet" />
-  <link href="/assets/images/webmaster/wal_ope.png" rel="preload" as="image">
-</head>
+  <body>
+    <div class="container">
+      <h1>Interests</h1>
+      <p>Click slowly and see ▼</p>
+      <div id="wallet">
+        <img
+          src="/assets/images/webmaster/wal_clo.png"
+          data-alt="/assets/images/webmaster/wal_ope.png"
+        />
 
-<body>
+        <div class="overlay">
+          <div class="top">
+            <p>
+              <a href="#" data-target="1">Likes + dislikes</a>
+              <a href="#" data-target="2">Miscellaneous</a>
+              <a href="#" data-target="3">Film</a>
+              <a href="#" data-target="4">Academic</a>
+            </p>
+          </div>
 
-  <div class="container">
-    <h1>Interests</h1>
-    <p>Click slowly and see ▼</p>
-    <div id="wallet">
-      <img src="/assets/images/webmaster/wal_clo.png" data-alt="/assets/images/webmaster/wal_ope.png">
-
-      <div class="overlay">
-        <div class="top">
-          <p>
-            <a href="#" data-target="1">Likes + dislikes</a>
-            <a href="#" data-target="2">Miscellaneous</a>
-            <a href="#" data-target="3">Film</a>
-            <a href="#" data-target="4">Academic</a>
-          </p>
+          <div class="bot"></div>
         </div>
+      </div>
 
-        <div class="bot"></div>
+      <div class="panel" id="1">
+        <table>
+          <tr>
+            <td style="width: 40%"><h2>likes...</h2></td>
+            <td><h2>dislikes...</h2></td>
+          </tr>
+          <tr>
+            <td style="width: 40%">&#9711; rainless cloudy weather</td>
+            <td><span>&#9747; </span> realizing i just spoke too loud</td>
+          </tr>
+          <tr>
+            <td>&#9711; taking a walk just after rain</td>
+            <td><span>&#9747; </span>generative ai</td>
+          </tr>
+          <tr>
+            <td>&#9711; old paperback books</td>
+            <td><span>&#9747; </span> mirrors</td>
+          </tr>
+          <tr>
+            <td>&#9711; being alone</td>
+            <td><span>&#9747; </span> being alone</td>
+          </tr>
+          <tr>
+            <td>&#9711; customizing what i can</td>
+            <td><span>&#9747; </span> self-made prisons</td>
+          </tr>
+          <tr>
+            <td>&#9711; figuring problems out</td>
+            <td><span>&#9747; </span> finances</td>
+          </tr>
+          <tr>
+            <td>&#9711; tea</td>
+            <td><span>&#9747; </span> sweetened coffee</td>
+          </tr>
+          <tr>
+            <td>&#9711; re-encountering old friends</td>
+            <td><span>&#9747; </span> polyester</td>
+          </tr>
+          <tr>
+            <td>&#9711; moss</td>
+            <td>
+              <span>&#9747; </span> crowds (except parties and concerts..)
+            </td>
+          </tr>
+          <tr>
+            <td>&#9711; wooden objects</td>
+            <td><span>&#9747; </span> cellphones</td>
+          </tr>
+          <tr>
+            <td>&#9711; cigarettes</td>
+            <td><span>&#9747; </span> waking up after 10am</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="panel" id="2">
+        <p>miscelanea</p>
+        <table class="misc">
+          <tr>
+            <td style="width: 40%"><h2>film directors</h2></td>
+            <td>
+              agnès varda, stanley kubrick, ingmar bergman, hayao miyazaki
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 40%"><h2>television</h2></td>
+            <td> fleabag, toma lá dá cá, hbo girls, sex and the city, father ted</td>
+          </tr>
+          <tr>
+            <td><h2>anime</h2></td>
+            <td> neon genesis evangelion, serial experiments lain, azumanga daioh <i>(yeah it's not much)</i> </td>
+          </tr>
+          <tr>
+            <td><h2>anime</h2></td>
+            <td> neon genesis evangelion, serial experiments lain, azumanga daioh <i>(yeah it's not much)</i> </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="panel" id="3">
+        <p>firmes</p>
       </div>
     </div>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const wallet = document.getElementById("wallet");
+        const img = wallet.querySelector("img");
+        const top = wallet.querySelector(".top");
+        const bottom = wallet.querySelector(".bot");
 
-      <div class="panel" id="1">
-    <h2>Likes + dislikes</h2>
-<table>
-  <tr>
-    <td style="width: 40%;">&#9711; rainless cloudy weather</td>
-    <td><span>&#9747; </span> realizing i just spoke too loud</td>
-  </tr>
-  <tr>
-    <td>&#9711; taking a walk just after rain</td>
-    <td><span>&#9747; </span>generative ai</td>
-  </tr>
-  <tr>
-    <td>&#9711; old paperback books</td>
-    <td><span>&#9747; </span></td>
-  </tr>
-  <tr>
-    <td>&#9711; being alone</td>
-    <td><span>&#9747; </span> being alone</td>
-  </tr>
-  <tr>
-    <td>&#9711; customizing what i can</td>
-    <td><span>&#9747; </span> self-made prisons</td>
-  </tr>
-  <tr>
-    <td>&#9711; figuring problems out</td>
-    <td><span>&#9747; </span> finances</td>
-  </tr>
-  <tr>
-    <td>&#9711; studying</td>
-    <td><span>&#9747; </span> mirrors</td>
-  </tr>
-  <tr>
-    <td>&#9711; re-encountering old friends</td>
-    <td><span>&#9747; </span> polyester</td>
-  </tr>
-    <tr>
-    <td>&#9711; moss</td>
-    <td><span>&#9747; </span> crowds (except parties and concerts..)</td>
-  </tr>
-  <tr>
-    <td>&#9711; wooden objects</td>
-    <td><span>&#9747; </span> cellphones</td>
-  </tr>
-  <tr>
-    <td>&#9711; cigarettes</td>
-    <td><span>&#9747; </span> waking up after 10am</td>
-  </tr>
-</table>
+        const links = top.querySelectorAll("a");
+        const panels = document.querySelectorAll(".panel");
 
-  </div>
+        function toggleWallet() {
+          const current = img.getAttribute("src");
+          const alt = img.dataset.alt;
 
-  <div class="panel" id="2">
-    <p>miscelanea</p>
-  </div>
+          img.setAttribute("src", alt);
+          img.dataset.alt = current;
 
-  <div class="panel" id="3">
-    <p>firmes</p>
-  </div>
+          wallet.classList.toggle("active");
+        }
 
-  </div>
+        // image opens wallet
+        img.addEventListener("click", () => {
+          if (!wallet.classList.contains("active")) {
+            toggleWallet();
+          }
+        });
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const wallet = document.getElementById("wallet");
-  const img = wallet.querySelector("img");
-  const top = wallet.querySelector(".top");
-  const bottom = wallet.querySelector(".bot");
+        // bottom toggles
+        bottom.addEventListener("click", toggleWallet);
 
-  const links = top.querySelectorAll("a");
-  const panels = document.querySelectorAll(".panel");
+        // prevent top from toggling wallet
+        top.addEventListener("click", (e) => {
+          e.stopPropagation();
+        });
 
-  function toggleWallet() {
-    const current = img.getAttribute("src");
-    const alt = img.dataset.alt;
+        // 🔹 content switching
+        links.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
 
-    img.setAttribute("src", alt);
-    img.dataset.alt = current;
+            const id = link.dataset.target;
 
-    wallet.classList.toggle("active");
-  }
+            panels.forEach((p) => p.classList.remove("active"));
 
-  // image opens wallet
-  img.addEventListener("click", () => {
-    if (!wallet.classList.contains("active")) {
-      toggleWallet();
-    }
-  });
-
-  // bottom toggles
-  bottom.addEventListener("click", toggleWallet);
-
-  // prevent top from toggling wallet
-  top.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-
-  // 🔹 content switching
-  links.forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      const id = link.dataset.target;
-
-      panels.forEach(p => p.classList.remove("active"));
-
-      const target = document.getElementById(id);
-      if (target) target.classList.add("active");
-    });
-  });
-});
-</script>
-
-
-</body>
-
+            const target = document.getElementById(id);
+            if (target) target.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

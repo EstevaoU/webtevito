@@ -3,9 +3,15 @@
     src: url("/assets/fonts/Ribbon131BT-Bold.woff");
 }
 
+:root {
+  --cafe: #3e1603;
+}
+
 body {
-    background-color: #d8af80;
-    background-image: url("/assets/images/webmaster/rice.png");
+color: var(--cafe);
+background-color: #d8af80;
+background-image: url("/assets/images/webmaster/paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     text-shadow: rgb(248, 220, 204) 0 1px 0, rgba(0, 0, 0, 0.3) 0 -1px 0;
       font-size: 13px;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
@@ -40,7 +46,9 @@ p {
     color: #d5b32e;
     text-decoration: none;
   }
-
+  .top {
+    pointer-events: none;
+  }
 }
 
 
@@ -57,9 +65,15 @@ p {
   text-shadow: rgba(204, 160, 135, 0.65) 0 1px 0, rgba(0, 0, 0, 0.21) 0 -1px 0;
 }
 
-#wallet.active .overlay {
+#wallet.active
+{
+  .overlay {
   opacity: 1;
   pointer-events: auto;
+}
+ .top {
+  pointer-events: auto;
+ }
 }
 
 .top {
@@ -105,3 +119,16 @@ table {
     font-family: 'Noto Sans JP'
   }
 }
+
+table.misc,
+table.misc th,
+table.misc td {
+  padding: 4px 7px 4px 7px;
+  border-collapse: collapse;
+  border: 1px solid var(--cafe);
+}
+
+table.misc i {
+  font-size: 10px;
+}
+
