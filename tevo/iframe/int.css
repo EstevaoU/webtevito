@@ -43,7 +43,7 @@ p {
     display: block;
   }
   a {
-    color: #d5b32e;
+    color: #56ec12e3;
     text-decoration: none;
   }
   .top {
@@ -114,6 +114,7 @@ table {
   width: 491px;
   td {
   vertical-align: top;
+  text-align: justify;
     }
   span {
     font-family: 'Noto Sans JP'

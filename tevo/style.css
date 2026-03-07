@@ -88,6 +88,14 @@ button {
     }
 }
 
+.off {
+    color: gray !important;
+    pointer-events: none;
+    cursor: not-allowed !important;
+    background-color: #0e0e0e85;
+    box-shadow: inset 10px 0px 10px 8px rgba(0, 0, 0, 0.21);
+}
+
 button.active {
     box-shadow: none !important;
   background-image: url("/assets/half.png") !important;

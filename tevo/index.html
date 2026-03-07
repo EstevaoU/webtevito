@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- TEVIWEB/tevo V2.1
+<!-- TEVIWEB/tevo V2.02.1a
 hello... beware the code is as tidy as i could write, which is messy.
 look and take all you like but be advised that copying and pasting gives you no learning
                  ___
@@ -31,6 +31,7 @@ hand-coded by tevito/estêvão on visual studio code -->
     <link rel="preload" href="iframe/int.html">
 
     <script>
+    // make buttons werk
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll('.button');
   const iframe = document.getElementById('midbox');
@@ -55,25 +56,21 @@ document.addEventListener("DOMContentLoaded", function () {
 <body>
     <div class="centre">
         <div class="left">
-            <div class="header"></div>
+            <a href="/">
+            <div class="header"></div></a>
 
             <div class="navbar">
 
-                    <button class="button" id="defaultTab" data-src="iframe/int.html">
+                    <button class="button" id="defaultTab" data-src="iframe/tevo_if.html">
                         About
                     </button>
 
 
-                    <button class="button" data-src="iframe/tevo_if.html">
+                    <button class="button" data-src="iframe/int.html">
                         Interests
                     </button>
 
-
-                    <button class="button" data-src="iframe/tevo_if.html">
-                        Fanlistings
-                    </button>
-
-                    <button class="button" data-src="iframe/tevo_if.html">
+                    <button class="off button">
                         Quiz results
                     </button>
 
