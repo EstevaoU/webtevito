@@ -32,10 +32,6 @@ const quotes = [
       href="https://www.youtube.com/watch?v=y4WVZncHaLo" target="_blank">
        Only a phase these dark café days
    </a>`,
-   `<a title="Adriana Calcanhotto 'Esquadros'"
-      href="https://www.youtube.com/watch?v=Ngu8kYgRH_o" target="_blank">
-       Exponho o meu modo, me mostro, eu canto para quem?
-   </a>`,
    `<a title="Caroline Polachek, 'Door'"
       href="https://www.youtube.com/watch?v=7w6R4I7I3wA" target="_blank">
        Who is the you who I sing to when the house is empty?
