@@ -52,6 +52,18 @@ const quotes = [
       href="https://en.wikipedia.org/wiki/Ulysses_(novel)" target="_blank">
         Look at the sea. What does it care about offences?
    </a>`,
+      `<a title="Talking Heads, 'Road to Nowhere'"
+      href="https://www.youtube.com/watch?v=LQiOA7euaYA" target="_blank">
+        We're on a road to nowhere
+   </a>`,
+      `<a title="Lorde, 'Hammer'"
+      href="https://www.youtube.com/watch?v=P7xnBdx70GU" target="_blank">
+        There's peace in the madness over our heads
+   </a>`,
+      `<a title="Lorde, 'Hammer'"
+      href="https://www.youtube.com/watch?v=P7xnBdx70GU" target="_blank">
+        It's a fucked-up world, been to hell and back / But I've sent you a postcard from the edge
+   </a>`,
 ];
 
 
