@@ -92,6 +92,9 @@ body {
   --mid: #dad2b4;
   image-rendering: pixelated;
   width: 1100px;
+  * {
+    image-rendering: auto;
+  }
 }
 
 #fdd {
