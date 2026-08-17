@@ -1,6 +1,6 @@
 body {
     font-family: "Pixel MS SS", Verdana, Tahoma, sans-serif;
-    background-image: url(/assets/images/taco.jpg);
+    background-image: url(graphics/taco.jpg);
     background-size: 500px;
 }
 
@@ -28,7 +28,7 @@ body {
 
 .left {
     background-color: #292d2b;
-    background-image: url("/45.png"), linear-gradient(to right,
+    background-image: url("graphics/45.png"), linear-gradient(to right,
             #49444c 10%,
             #292d2b 43%,
             #111010 100%);
@@ -98,7 +98,7 @@ button {
 
 button.active {
     box-shadow: none !important;
-  background-image: url("/assets/half.png") !important;
+  background-image: url("graphics/half.png") !important;
     background-size: auto 43px !important;
 
             text-shadow:          
@@ -150,7 +150,7 @@ button::before {
     height: 77px;
     cursor: pointer;
 
-    background-image: url("sprite.jpg");
+    background-image: url("graphics/sprite.jpg");
     background-repeat: no-repeat;
 }
 
