@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: 'ribbon';
-  src: url(https: //file.garden/Zx6xDK2qeAn-d7p4/fonts/Ribbon131BT-Bold.woff);
+  font-family: ribbon;
+  src: url(./assets/fonts/Ribbon131BT-Bold.woff);
 }
 
 /* FINIS LETTERARUM */
@@ -40,9 +40,11 @@ body {
   background-position: left, 25%;
   background-attachment: fixed, local;
   --main: black;
-  --back: #fcfbf4;
+  --back: linear-gradient(180deg, rgba(252, 251, 244, 1) 0%, rgba(227, 225, 213, 1) 100%);
+  --waite: rgba(252, 251, 244, 1);
   --mid: #dad2b4;
   --moss: #2d5c28;
+  --fade: #6ea175;
   image-rendering: pixelated;
   width: 1100px;
   min-height: 100vh;
@@ -54,24 +56,30 @@ body {
   }
 
   *::selection {
-    color: var(--back);
+    color: var(--waite) !important;
     background-color: var(--moss);
+    text-shadow: none;
   }
 }
 
-    a {
-      text-decoration: none;
-      color: var(--moss);
-    }
-    a:hover {
-      font-weight: bold;
-    }
+a {
+  text-decoration: none;
+  color: var(--moss);
+}
+
+a:hover {
+  color: var(--fade);
+  transition: color 0.1s ease;
+}
 
 
 .site {
   width: 1000px;
   margin: 0 auto;
-  font-family: MS Gothic, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Segoe UI",
+    "SegoeUI",
+    "Noto Sans",
+    sans-serif;
 }
 
 .content {
@@ -113,7 +121,9 @@ body {
 
 .dex {
   grid-area: lb;
-  background-color: var(--back);
+  background: var(--back);
+  background-attachment: fixed;
+  background-size: 100vw;
   border: 1px solid black;
 }
 
@@ -134,7 +144,9 @@ body {
 
 .med {
   grid-area: mid;
-  background-color: var(--back);
+  background: var(--back);
+  background-attachment: fixed;
+  background-size: 100vw;
   border: 1px solid black;
   border-right: none;
 }
@@ -162,7 +174,8 @@ body {
   margin: 15px 15px 60px 15px;
   font-size: 15px;
   text-align: justify;
-  display: grid;
+
+  /*display: grid;
   grid-template-areas:
     "sp sp sp"
     "prtex prtex pril";
@@ -171,9 +184,11 @@ body {
   a:hover {
     text-decoration: initial;
   }
+
   img {
     border: 3px double #000;
   }
+
   h1 {
     grid-area: sp;
     font-family: 'ribbon', cursive;
@@ -182,15 +197,16 @@ body {
     margin: 0 auto;
   }
 
-    blockquote::before {
-      content: open-quote;
-    }
-    blockquote {
-      text-indent: -23px;
-      margin-left: 20px;
-      margin-right: 10px;
-    }
-  
+  blockquote::before {
+    content: "❝";
+  }
+
+  blockquote {
+    text-indent: -23px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
 }
 
 .pr-tex {
@@ -200,6 +216,18 @@ body {
 
 pril {
   grid-area: pril;
+}
+
+#status {
+  color: #222;
+  font: var(--w7-font);
+  grid-area: fig;
+}
+
+.duomid {
+  >div {
+    margin: 15px;
+  }
 }
 
 /* FINIS MEDII RERUM */
@@ -212,6 +240,7 @@ pril {
     margin: 4px;
     font-size: 14px;
   }
+
   button {
     all: unset;
     cursor: pointer;
@@ -252,7 +281,9 @@ pril {
 
 .sin {
   grid-area: rb;
-  background-color: var(--back);
+  background: var(--back);
+  background-attachment: fixed;
+  background-size: 100vw;
   border: 1px solid black;
 }
 
@@ -269,7 +300,8 @@ pril {
   }
 }
 
-#hours, #minutes {
+#hours,
+#minutes {
   animation: blink 2s linear infinite;
 }
 
@@ -300,22 +332,21 @@ pril {
 
 .guest {
   place-self: center;
-    place-items: center;
-    width: 125px;
-    padding: 8px;
-    margin-top: 20px;
+  place-items: center;
+  width: 125px;
+  padding: 8px;
+  margin-top: 20px;
   display: grid;
-    border-image: url("/assets/graphics/lace border.png");
-    border-image-width: 29px;
-    border-image-slice: 29 fill;
-    border-image-repeat: round;
-    border-image-outset: 15px;
-    text-align: center;
-      margin: 0 auto 50px auto;
+  text-align: center;
+  margin: 0 auto 50px auto;
+  border: 1px solid var(--w7-bl-bd);
+  border-radius: var(--w7-el-bdr);
+  box-shadow: 5px 5px 3px -3px var(--w7-bl-bd);
+  background: linear-gradient(to bottom, #fff, var(--w7-el-bg-s-1));
 }
 
 .diario {
-  border: 1px solid #b5bec1;
+  border: 1px solid var(--w7-bl-bd);
   border-radius: 3px;
 
   height: 101px;
@@ -329,12 +360,15 @@ pril {
   overflow: auto;
   scrollbar-width: none;
   box-shadow: inset 0 0 0 1px var(--back);
+
+  background: linear-gradient(to bottom, #fff, var(--w7-el-bg-s-1));
+  box-shadow: inset 5px 5px 3px -4px var(--w7-bl-bd);
 }
 
 .diario p {
   position: absolute;
-  margin-top: -13.3pt;
-  text-shadow: 2px 0 var(--back), -2px 0 var(--back), 0 2px var(--back), 0 -2px var(--back), 1px 1px var(--back), -1px -1px var(--back), 1px -1px var(--back), -1px 1px var(--back);
+  margin-top: -21px;
+  text-shadow: 2px 0 white, -2px 0 white, 0 2px white, 0 -2px white, 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
 }
 
 .diario b {
@@ -345,4 +379,105 @@ pril {
 
 .footer {
   grid-area: ft;
+}
+
+/* this section is taken from the 7.css framework
+https://khang-nd.github.io/7.css/ */
+
+:root {
+  /* blt = balloon tail */
+  --w7-bl-bd: #0006;
+  --w7-blt-size: 18px;
+  --w7-blt-offset: 1em;
+}
+
+[role="tooltip"] {
+  position: relative;
+  padding: 1em 1em 1em 2.5em;
+  border: 1px solid var(--w7-bl-bd);
+  border-radius: var(--w7-el-bdr);
+  box-shadow: 5px 5px 3px -3px var(--w7-bl-bd);
+  background: linear-gradient(to bottom, #fff, var(--w7-el-bg-s-1));
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1.5V19.5H18.5L0.5 1.5Z' fill='%23fff' stroke='%23fff'/%3E%3Cpath d='M1 19.5H0.5V1.5L18.5 19.5H18' stroke='%23939393'/%3E%3C/svg%3E");
+    width: var(--w7-blt-size);
+    height: var(--w7-blt-size);
+    top: calc(var(--w7-blt-size) * -1);
+    left: 60px;
+  }
+
+  &[id] {
+    position: absolute;
+  }
+
+  &.is-top {
+    &::before {
+      background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1.5V19.5H18.5L0.5 1.5Z' fill='%23ebebeb' stroke='%23ddd'/%3E%3Cpath d='M1 19.5H0.5V1.5L18.5 19.5H18' stroke='%23939393'/%3E%3C/svg%3E");
+      bottom: calc(var(--w7-blt-size) * -1);
+      top: unset;
+      transform: scale(-1);
+    }
+
+    &.is-right {
+      &::before {
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  &.is-left {
+    &::before {
+      left: unset;
+      right: var(--w7-blt-offset);
+    }
+
+    &.is-bottom {
+      &::before {
+        transform: scaleX(-1);
+      }
+    }
+  }
+}
+
+:root {
+  /* Naming convention:
+   * `--w7-<component>-<property>-<state>`
+   * where:
+   * <component> is the name of the component (el = element, li = list item, etc.)
+   * <property> is the property being defined (bg = background, bd = border, c = color, sd = shadow, etc.)
+   * <state> is the state of the component (d = disabled, h = hovered, a = active, hl = highlighted, etc.)
+   */
+
+  --w7-font: 9pt "Segoe UI", "SegoeUI", "Noto Sans", sans-serif;
+  --w7-surface: #f0f0f0;
+
+  --w7-el-bg: #f2f2f2;
+  --w7-el-bg-d: #f4f4f4;
+  --w7-el-bg-s-1: #ebebeb;
+  /* element background shade 1 (slightly darker) */
+  --w7-el-bg-s-2: #cfcfcf;
+  /* element background shade 2 (darker) */
+
+  --w7-el-sd: inset 0 0 0 1px #fffc;
+  --w7-el-sd-a: inset 1px 1px 0 #0003, inset -1px 1px 0 #0001;
+
+  --w7-el-bd: #8e8f8f;
+  --w7-el-bd-h: #3c7fb1;
+  --w7-el-bd-a: #6d91ab;
+  --w7-el-bd-d: #adb2b5;
+  --w7-el-bdr: 3px;
+  /* element border radius */
+
+  --w7-el-c: #000000;
+  --w7-el-c-d: #838383;
+
+  --w7-el-grad: linear-gradient(var(--w7-el-bg) 45%, var(--w7-el-bg-s-1) 45%, var(--w7-el-bg-s-2));
+  --w7-el-grad-h: linear-gradient(#eaf6fd 45%, #bee6fd 45%, #a7d9f5);
+  --w7-el-grad-a: linear-gradient(#e5f4fc, #c4e5f6 30% 50%, #98d1ef 50%, #68b3db);
+
+  --w7-li-bd-hl: #aaddfa;
+  --w7-li-bg-hl: linear-gradient(#fff9, #e6ecf5cc 90%, #fffc);
 }
