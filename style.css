@@ -28,6 +28,40 @@ html {
   background-size: 100%;
 }
 
+body:before {
+  content: " ";
+
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 7;
+  background-image: url('./assets/graphics/start.gif');
+  background-color: #101214;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: starto 0.9s ease 1s 1 normal forwards;
+  pointer-events: none;
+}
+
+@keyframes starto {
+  0.0% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 body {
   margin: 0 auto;
   padding: 1px;
@@ -44,6 +78,7 @@ body {
   --waite: rgba(252, 251, 244, 1);
   --mid: #dad2b4;
   --moss: #2d5c28;
+  --bordey: #0006;
   --fade: #6ea175;
   image-rendering: pixelated;
   width: 1100px;
@@ -124,7 +159,8 @@ a:hover {
   background: var(--back);
   background-attachment: fixed;
   background-size: 100vw;
-  border: 1px solid black;
+  border: 1px solid var(--bordey);
+  border-radius: 0 0 3px
 }
 
 .navbar {
@@ -147,7 +183,7 @@ a:hover {
   background: var(--back);
   background-attachment: fixed;
   background-size: 100vw;
-  border: 1px solid black;
+  border: 1px solid var(--bordey);
   border-right: none;
 }
 
@@ -284,7 +320,8 @@ pril {
   background: var(--back);
   background-attachment: fixed;
   background-size: 100vw;
-  border: 1px solid black;
+  border: 1px solid var(--bordey);
+  border-radius: 0 3px 3px 0;
 }
 
 @keyframes blink {
@@ -309,6 +346,18 @@ pril {
   font-size: 14px;
   margin: 15px;
   text-align: center;
+}
+
+.clock {
+  font-family: monospace;
+  background: linear-gradient(black, gray);
+  color: rgb(215, 214, 208);
+  padding: 5px;
+  max-width: max-content;
+  border: solid 1px black;
+  border-radius: 5px;
+  box-shadow: inset 3px 3px 8px black;
+  margin: 0 auto;
 }
 
 #crt {

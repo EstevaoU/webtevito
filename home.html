@@ -13,7 +13,7 @@ hand-coded by tevito/estêvão on visual studio code -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="one hundred greeting" />
-  <link rel="shortcut icon" href="" type="image/x-icon" />
+  <link rel="icon" type="image/png" href="./assets/graphics/clov.png" />
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -162,7 +162,8 @@ hand-coded by tevito/estêvão on visual studio code -->
           <div style="display:flex;align-items:center;justify-content: center;">
             <iframe style="border: 0; width: 560px; height: 42px;margin: 20px;"
               src="https://bandcamp.com/EmbeddedPlayer/album=2749780157/size=small/bgcol=ffffff/linkcol=0687f5/track=3104685846/transparent=true/autoplay=1"
-              seamless><a href="https://sonicyouth.bandcamp.com/album/the-whitey-album">The Whitey Album by Ciccone Youth (Sonic
+              seamless><a href="https://sonicyouth.bandcamp.com/album/the-whitey-album">The Whitey Album by Ciccone
+                Youth (Sonic
                 Youth)</a></iframe>
           </div>
 
@@ -180,9 +181,8 @@ hand-coded by tevito/estêvão on visual studio code -->
       <div class="sin lat">
         <div class="sinapex">
           <div class="clock">
-            <span id="hours"></span>
-            <span>:</span>
-            <span id="minutes"></span>
+            <span id="hours"></span><span>:</span><span id="minutes"></span>
+            <span id="ampm"></span>
           </div>
           what's new?
         </div>
@@ -255,14 +255,17 @@ hand-coded by tevito/estêvão on visual studio code -->
 
     function setTime() {
       var time = new Date().toLocaleTimeString('en-US',
-        { hour12: true, hour: 'numeric', minute: 'numeric' });
+        { hour12: true, hour: '2-digit', minute: '2-digit' });
       if (oldTime === time) {
         return;
       }
       oldTime = time;
-      time = time.split(':');
-      document.querySelector('#hours').innerText = time[0];
-      document.querySelector('#minutes').innerText = time[1];
+      var clean = time.replace(/\u202f|\s/g, '');
+      var numbers = clean.match(/\d+/g);
+      var ampm = clean.match(/[AaPp][Mm]/)[0];
+      document.querySelector('#hours').innerText = numbers[0];
+      document.querySelector('#minutes').innerText = numbers[1];
+      document.querySelector('#ampm').innerText = ampm;
     }
 
     setInterval(setTime, 1000);
